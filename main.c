@@ -26,6 +26,12 @@ void vSizeOfDataType(void);
 void vStringTest(void);
 
 /**
+ * @brief Floating Point excersice
+ *
+ */
+void vFloatingPoint(void);
+
+/**
  * @brief sizeof command with the different data types of the host/target
  *
  */
@@ -45,15 +51,33 @@ void vSizeOfDataType(void)
 void vStringTest(void)
 {
 	char a1 = 'a';
-	char a2 = 'p';
+	/*char a2 = 'p';
 	char a3 = 'p';
 	char a4 = 'l';
 	char a5 = 'e';
 	char a6 =':';
-	char a7 = ')';
+	char a7 = ')';*/
 
 	printf("The string is: %d\n", a1);
 	printf("The string is: %c\n", a1);
+}
+
+/**
+ * @brief Floating Point excersice
+ *
+ */
+void vFloatingPoint(void)
+{
+	float magicnumber = 45.78976834578;
+
+	printf("Number = %0.2f\n", magicnumber);
+	printf("Number = %0.2e\n", magicnumber);
+
+
+	double chargE = -1.60217662e-19;
+
+	printf("chargE = %0.28lf\n", chargE);
+	printf("chargE = %0.8le\n", chargE);
 }
 
 /**
@@ -63,7 +87,7 @@ void vStringTest(void)
  */
 int main(void)
 {
-    vStringTest();
+	vFloatingPoint();
 
     printf("\n\n**************   Press enter to exit this application   **************\n");
 	getchar();
