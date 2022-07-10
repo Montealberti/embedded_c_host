@@ -5,7 +5,6 @@
  *      Author: Iceman
  */
 
-
 #include<stdio.h>
 #include<stdint.h>
 
@@ -21,6 +20,12 @@
 void vSizeOfDataType(void);
 
 /**
+ * @brief Try string handling in C
+ *
+ */
+void vStringTest(void);
+
+/**
  * @brief sizeof command with the different data types of the host/target
  *
  */
@@ -34,13 +39,31 @@ void vSizeOfDataType(void)
 }
 
 /**
+ * @brief Try string handling in C
+ *
+ */
+void vStringTest(void)
+{
+	char a1 = 'a';
+	char a2 = 'p';
+	char a3 = 'p';
+	char a4 = 'l';
+	char a5 = 'e';
+	char a6 =':';
+	char a7 = ')';
+
+	printf("The string is: %d\n", a1);
+	printf("The string is: %c\n", a1);
+}
+
+/**
  * @brief Main Function
  *
  * @return int value with error code, 0 = success
  */
 int main(void)
 {
-    vSizeOfDataType();
+    vStringTest();
 
     printf("\n\n**************   Press enter to exit this application   **************\n");
 	getchar();
